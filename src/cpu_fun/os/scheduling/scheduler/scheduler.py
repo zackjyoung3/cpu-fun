@@ -1,6 +1,6 @@
 from cpu_fun.os.scheduling.process import Process
-from cpu_fun.os.scheduling.scheduler.action import Action
-from cpu_fun.os.scheduling.scheduler.event import Event, EventType
+from cpu_fun.os.scheduling.events.action import Action
+from cpu_fun.os.scheduling.events.event import Event, EventType
 from cpu_fun.os.scheduling.scheduler.strategies import SchedulingStrategyBase
 
 
