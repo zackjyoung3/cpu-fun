@@ -5,8 +5,8 @@ Strategy pattern
 
 from abc import ABC, abstractmethod
 
-from cpu_fun.os.scheduling.process import Process
 from cpu_fun.os.scheduling.events.action import Action
+from cpu_fun.os.scheduling.process import Process
 
 
 class SchedulingStrategyBase(ABC):
