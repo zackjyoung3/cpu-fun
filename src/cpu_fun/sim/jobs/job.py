@@ -21,6 +21,10 @@ class SimJob(ABC):
     id: int
     phases: deque[JobPhase]
 
+    def __post_init__(self) -> None:
+        if len(self.phases) == 0:
+            raise ValueError("SimJob must have at least one phase otherwise there is no utility")
+
     @property
     def no_more_runs(self) -> bool:
         return len(self.phases) == 0
