@@ -12,7 +12,7 @@ class SimJobBuilder:
         init
         :param strict: when True, enforce strict correctness of phases supplied.
         e.g. 2 consecutive phases should never be of the same type.
-        If strict => raise ValueError, otherwise => warm
+        If strict => raise ValueError, otherwise => warn
         """
         self._job_id = None
         self._built = False
